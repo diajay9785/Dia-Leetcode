@@ -5,6 +5,7 @@ class Solution {
         if(nums[i]==0) return 0;
         else if(nums[i]<0) negative ++;
     }
-    return negative%2==0?1:-1;
+    if(negative%2==0) return 1;
+    return -1;
     }
 }
