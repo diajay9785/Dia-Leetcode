@@ -10,6 +10,6 @@ class Solution {
         dp[i]=(2*dp[i-1]-last[c]+mod)%mod;
         last[c]=dp[i-1];
       }  
-      return (int)((dp[n]-1+mod)%mod);
+      return (int)((dp[n]-1+mod)%mod);//dp[n]-1 is to remove "" whih is inclded in the dp
     }
 }
